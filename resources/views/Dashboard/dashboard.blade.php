@@ -32,7 +32,7 @@
       @foreach ($alunos as $aluno)
         <tr>
           <td>{{ $aluno->id }}</td>
-          <td>{{$aluno->foto}} </td>
+          <td><img src="{{url('$aluno->foto')}}" /></td>
           <td>{{ $aluno->name }}</td>
           <td>{{ $aluno->matricula }}</td>
           <td>{{ $aluno->turma }}</td>
