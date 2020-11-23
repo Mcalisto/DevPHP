@@ -42,4 +42,9 @@ class LoginController extends Controller
       return view('Dashboard/cursos_dashboard', ['cursos' => $cursos, 'msg' => $msg]);
 
     }
+
+    public function exibir_questao()
+    {
+      return view('Login/questao');
+    }
 }

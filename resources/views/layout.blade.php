@@ -42,7 +42,7 @@
     <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <ul class="navbar-nav px-3">
       <li class="nav-item text-nowrap">
         <a class="nav-link" href="#">Sair</a>
@@ -73,7 +73,12 @@
                 Cursos
               </a>
             </li>
-
+            <li class="nav-item">
+              <a class="nav-link" href="/questao">
+                <span data-feather="file"></span>
+                Questão 6
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
