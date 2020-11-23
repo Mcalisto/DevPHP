@@ -57,8 +57,15 @@ class CursosController extends Controller
       return redirect("/dashboard/cursos");
     }
 
-    public function upload($file)
+    public function import_xml(Request $request)
     {
-      // code...
+
+      $xml = simplexml_load_file($request->xml);
+      foreach ($xml as $dados) {
+        $curso = new Cursos;
+        $curso->name = $dados->nome;
+        $curso->codigo = $dados->codigo;
+        $curso->save();
+      }
     }
 }

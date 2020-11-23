@@ -16,7 +16,13 @@
     <a class="btn btn-outline-primary" href="/curso/cadastrar">Cadastrar Curso</a>
   </div>
   <div class="col-5">
-    <input type="file" name="xml" value="">Upload De Arquivo
+    <form  action="/curso/import" method="post" enctype="multipart/form-data">
+      @csrf
+      <label for="xml">Upload De Arquivo: <br>
+      <input type="file" name="xml" value=""><input type="submit" name="" value="Enviar"> </label>
+
+
+    </form>
   </div>
 </div>
 

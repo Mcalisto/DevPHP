@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container">
-  <form action="/aluno/cadastrar" method="post">
+  <form action="/aluno/cadastrar" method="post" enctype="multipart/form-data">
     @csrf
     <div class="row">
       <div class="col">
@@ -75,7 +75,7 @@
     </div>
     <div class="row mt-5">
       <div class="">
-        <label for="foto">Foto do ALuno:
+        <label for="foto">Foto do Aluno:
         <input class="form-control" type="file" name="foto" ></label>
       </div>
     </div>

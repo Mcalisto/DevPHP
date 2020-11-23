@@ -39,3 +39,5 @@ Route::post('/curso/cadastrar', [CursosController::class, 'cadastrar_curso']);
 Route::get('/curso/editar/{id}', [CursosController::class, 'editar_form']);
 Route::post('/curso/editar/{id}', [CursosController::class, 'editar_curso']);
 Route::delete('/curso/remover/{id}', [CursosController::class, 'remover_curso']);
+
+Route::post('/curso/import', [CursosController::class, 'import_xml']);

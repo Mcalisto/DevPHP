@@ -19,6 +19,7 @@
     <thead>
       <tr>
         <th>ID</th>
+        <th></th>
         <th>Nome</th>
         <th>Matricula</th>
         <th>Turma</th>
@@ -27,9 +28,11 @@
       </tr>
     </thead>
     <tbody>
+
       @foreach ($alunos as $aluno)
         <tr>
           <td>{{ $aluno->id }}</td>
+          <td>{{$aluno->foto}} </td>
           <td>{{ $aluno->name }}</td>
           <td>{{ $aluno->matricula }}</td>
           <td>{{ $aluno->turma }}</td>

@@ -4,7 +4,7 @@
 
 <div class="container">
 
-  <form action="/curso/cadastrar" method="post">
+  <form action="/curso/cadastrar" method="post" enctype="multipart/form-data">
     @csrf
     <div class="">
       <div >
